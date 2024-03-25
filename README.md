@@ -50,7 +50,7 @@ TodoList is a simple web application to manage your daily tasks.
 
 ## Screenshots
 
-![TodoList Screenshot](/screenshots/todo-list.png)
+![TodoList Video Link](https://drive.google.com/file/d/1dQZYYrpxi0nUoxUetQSGeO6KQ7bPKzym/view?usp=sharing)
 
 ## Contributing
 
