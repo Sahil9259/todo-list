@@ -15,7 +15,6 @@ const Todo = () => {
   const [completed, setCompleted] = useState(false);
 
   const handleCheckboxChange = () => {
-    // Toggle the checkbox state
     setCompleted(!completed);
   };
   const [Array, setArray] = useState([]);
@@ -32,23 +31,24 @@ const Todo = () => {
       toast.error("Title Or Body Can't Be Empty");
     } else {
       if (id) {
-        await axios
-          .post(`http://localhost:5000/api/list/addTask`, {
+        try {
+          const response = await axios.post(`http://localhost:5000/api/list/addTask`, {
             title: Inputs.title,
             body: Inputs.body,
-            completed: Inputs.completed,
+            completed: completed,
             id: id,
-          })
-          .then((response) => {
-            console.log(response);
           });
-        setInputs({ title: "", body: "" });
-        toast.success("Your Task Is Added");
+          console.log(response);
+          setInputs({ title: "", body: "" });
+          toast.success("Your Task Is Added");
+        } catch (error) {
+          console.error("An error occurred:", error);
+        }
       } else {
         setArray([...Array, Inputs]);
         setInputs({ title: "", body: "" });
         toast.success("Your Task Is Added");
-        toast.error("Your Task Is Not Saved ! Please SignUp");
+        // toast.error("Your Task Is Not Saved ! Please SignUp");
       }
     }
   };
@@ -154,7 +154,7 @@ const Todo = () => {
       </div>
       <div className="todo-update " id="todo-update">
         <div className="container update">
-          <Update display={dis} update={toUpdateArray} />
+          <Update display={dis} update={toUpdateArray} id={id} completed={completed} />
         </div>
       </div>
     </>

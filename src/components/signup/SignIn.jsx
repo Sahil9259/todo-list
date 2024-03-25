@@ -35,7 +35,7 @@ const SignIn = () => {
         console.error("Response data or _id not found in the response.");
       }
     } catch (error) {
-      alert(error)
+      alert(error.response.data.message)
       console.error("An error occurred:", error);
     }
   };
