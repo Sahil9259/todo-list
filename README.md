@@ -26,6 +26,7 @@ TodoList is a simple web application to manage your daily tasks.
    
    git clone https://github.com/Sahil9259/todo-list.git
    
+# For Frontend 
 
 2. Navigate to the project directory:
 
@@ -41,6 +42,21 @@ TodoList is a simple web application to manage your daily tasks.
 
 5. Open your browser and visit `http://localhost:3000` to view the application.
 
+# For Backend
+
+6. Navigate to the project directory:
+
+   cd server
+
+7. Install dependencies:
+
+   npm install
+
+8. Start the development server:
+
+   npm start
+
+
 ## Usage
 
 - Add a new task: Type your task in the input field and press Enter.
@@ -48,9 +64,9 @@ TodoList is a simple web application to manage your daily tasks.
 - Edit a task: Double-click on the task text, make your changes, and press Enter to save.
 - Delete a task: Click on the delete icon (X) next to the task.
 
-## Screenshots
+## Video Link
 
-![TodoList Video Link](https://drive.google.com/file/d/1dQZYYrpxi0nUoxUetQSGeO6KQ7bPKzym/view?usp=sharing)
+ Video Link (https://drive.google.com/file/d/1dQZYYrpxi0nUoxUetQSGeO6KQ7bPKzym/view?usp=sharing)
 
 ## Contributing
 
