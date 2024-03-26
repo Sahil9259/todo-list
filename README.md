@@ -28,34 +28,31 @@ TodoList is a simple web application to manage your daily tasks.
    
 # For Frontend 
 
-2. Navigate to the project directory:
-
-   cd todo-list
-
-3. Install dependencies:
+2. Install dependencies:
 
    npm install
 
-4. Start the development server:
+3. Start the development server:
 
    npm start
 
-5. Open your browser and visit `http://localhost:3000` to view the application.
+4. Open your browser and visit `http://localhost:3000` to view the application.
 
 # For Backend
 
-6. Navigate to the project directory:
+5. Navigate to the project directory:
 
    cd server
 
-7. Install dependencies:
+6. Install dependencies:
 
    npm install
 
-8. Start the development server:
+7. Start the development server:
 
    npm start
 
+8. Backend Server is running on `http://localhost:5000`.
 
 ## Usage
 
